@@ -1,5 +1,4 @@
-const soap = require('soap');
-const xml2json = require('xml2json');
+
 
 class StudentVueClient {
     constructor(username, password, client) {

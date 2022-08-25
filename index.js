@@ -1,4 +1,4 @@
-
+(function(){
 
 class StudentVueClient {
     constructor(username, password, client) {
@@ -117,5 +117,7 @@ function getDistrictUrls(zipCode) {
             }, 'HDInfoServices'));
         });
 }
+    
+window.StudentVue={login,getDistrictUrls}
 
-module.exports = { login, getDistrictUrls };
+})()

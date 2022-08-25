@@ -65,7 +65,7 @@ class StudentVueClient {
     }
 
     _xmlJsonSerialize(servicePromise) {
-        return servicePromise.then(result => xml2json.toJson(result[0].ProcessWebServiceRequestResult));
+        return servicePromise.then(result => xml2json(result[0].ProcessWebServiceRequestResult));
     }
 
     _makeServiceRequest(methodName, params = {}, serviceHandle = 'PXPWebServices') {
